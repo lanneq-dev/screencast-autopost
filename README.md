@@ -39,7 +39,7 @@ npm start
 ## 🦩 FRONTEND
 > MVP Version. Easy GUI with Electron
 > ---
->> - [x] Init Electron desktop app and run
+>> - [ ] Init Electron desktop app and run
 >> - [ ] Status messages in Tray
 >> - [ ] Show logo in Tray
 >> ---
