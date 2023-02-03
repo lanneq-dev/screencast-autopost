@@ -1,8 +1,6 @@
 import { exec } from "child_process";
 import fs from "fs";
 
-import { sendVideo } from './server.js'
-
 export class FileExplorer {
   constructor(filename, path) {
     this.filename = filename;

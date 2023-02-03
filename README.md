@@ -26,7 +26,7 @@ npm start
 
 > ### FOR BACKEND:
  - Node.JS
- - Express.JS
+ - Express.JS, Express.Router()
  - BASH
  - Linux
  - Telegraf
