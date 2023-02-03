@@ -5,8 +5,9 @@
   "main": "run_bash.js",
   "type": "module",
   "scripts": {
-    "start": "node main",
-    "dev": "node server",
+    "start": "node server",
+    "gui": "electron .",
+    "dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +17,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "telegraf": "^4.11.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

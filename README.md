@@ -13,7 +13,10 @@ This is a small script that works in the background and tracks the appearance of
 ## 🛩 How you can use:
 ```
 npm install
+cp .env.example .env
 npm start
+
+(npm run dev)
 ```
 
 ---
@@ -36,7 +39,7 @@ npm start
 ## 🦩 FRONTEND
 > MVP Version. Easy GUI with Electron
 > ---
->> - [ ] Init
+>> - [x] Init Electron desktop app and run
 >> - [ ] Status messages in Tray
 >> ---
 
