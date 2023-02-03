@@ -41,6 +41,7 @@ npm start
 > ---
 >> - [x] Init Electron desktop app and run
 >> - [ ] Status messages in Tray
+>> - [ ] Show logo in Tray
 >> ---
 
 ## 🐧 BACKEND
@@ -51,5 +52,4 @@ npm start
 >> - [x] ```sendFileToTelegram()``` method 
 >> - [x] Replace all relative ways with absolute
 >> - [ ] SendFile, if created new mp4 file and reading statis 'OK'
->> - [ ] 
 >> ---
