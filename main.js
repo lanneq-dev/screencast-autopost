@@ -33,7 +33,7 @@ export class FileExplorer {
       if (file.includes(".webm")) {
         const shothoutEnd = file.slice(0, -5);
         exec(
-          `ffmpeg -fflags +genpts -i ${shothoutEnd}.webm -r 24 ./Source/${shothoutEnd}.mp4`
+          `ffmpeg -fflags +genpts -i ${shothoutEnd}.webm -r 24 ./Source/${'file'}.mp4`
         );
         this.removeByName(shothoutEnd);
       }
@@ -53,6 +53,14 @@ export class FileExplorer {
   watchChanges() {
     const senderToTelegram = new SenderToTelegram()
 
+    fs.access('example_file.txt', fs.constants.R_OK, (err) => {
+      console.log('\n> Checking Permission for reading the file');
+      if (err)
+        console.error('No Read access');
+      else
+        console.log('File can be read');
+    });
+
     fs.watch("./", (eventType, filename) => {
       if (eventType === 'rename') {
         if (filename.includes('Screencast from ')) {
@@ -61,6 +69,10 @@ export class FileExplorer {
       } 
     });
   }
+  
+  removeFileByPatAndhName() {
+  }
+
 }
 
 export class SenderToTelegram {
