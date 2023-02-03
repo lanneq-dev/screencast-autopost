@@ -1,0 +1,17 @@
+{
+  "name": "screencasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run_bash.js",
+  "type": "module",
+  "scripts": {
+    "start": "node runfile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
